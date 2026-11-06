@@ -1,0 +1,65 @@
+CONVITE VIRTUAL — BATIZADO DE AURORA SOUSA SANTOS
+
+Atualização: removido o fundo retangular da ilustração da pomba, deixando a arte em PNG com transparência real.
+
+COMO ABRIR
+1. Extraia o arquivo ZIP.
+2. Abra a pasta batizado_aurora_convite.
+3. Abra o arquivo index.html no navegador.
+
+ARQUIVOS
+- index.html: conteúdo e informações do convite.
+- estilo.css: identidade visual, ornamentos, responsividade e animações.
+- script.js: contagem regressiva até 06/12/2026 às 09h.
+- imagens/: ilustrações dos ramos e da pomba.
+
+A imagem da pomba agora possui fundo transparente e não usa mais mistura de cores com o fundo da página.
+
+
+MÚSICA
+- Trilha instrumental suave e original em musica/instrumental-suave.mp3.
+- O convidado pode ativar, silenciar e reativar pelo botão no topo do convite.
+- Navegadores normalmente bloqueiam áudio automático com som; a música começa quando o convidado toca em "Ativar música".
+- Mantenha a pasta musica junto com os demais arquivos ao publicar o convite.
+
+
+ATUALIZAÇÃO — AUTOPLAY E CONTROLE FLUTUANTE
+- A música tenta iniciar automaticamente ao abrir o convite.
+- O botão acompanha a rolagem dentro da área do convite (position: sticky), sem ficar preso à janela inteira.
+- Se o navegador bloquear o autoplay com som, o botão exibirá "Toque para ouvir"; o primeiro toque inicia a música.
+- Quando a música estiver tocando, o botão silencia/reativa sem reiniciar a faixa.
+- A reprodução automática com som depende das permissões e políticas do navegador/dispositivo; nenhum site consegue garantir isso em todos os aparelhos.
+
+
+AJUSTES DESTA VERSÃO
+- O botão de música agora fica no fluxo normal da página e rola junto com o convite. Não usa position: fixed nem position: sticky.
+- Ao abrir, o navegador recebe uma tentativa de reprodução automática com som.
+- Se o navegador bloquear o autoplay com som, o botão mostra "Toque para ouvir". O primeiro toque/clique do visitante tenta liberar a reprodução.
+- Essa restrição é definida pelo navegador e não pode ser removida pelo HTML/JavaScript.
+- O botão permite silenciar e reativar a faixa sem reiniciar a música.
+
+
+POSIÇÃO DO BOTÃO DE MÚSICA
+- O botão foi movido para o rodapé do convite, depois de todas as informações.
+- Ele está no fluxo normal do documento (position: static), sem fixed ou sticky.
+- Portanto, ao rolar a página, o botão sobe junto com o conteúdo e fica na parte inferior do convite.
+
+
+POSIÇÃO DO BOTÃO FLUTUANTE
+- O controle de música fica fixado no canto inferior direito da tela.
+- Ele permanece visível enquanto a pessoa rola o convite para cima ou para baixo.
+- O botão foi colocado fora do cartão principal do convite para evitar cortes por overflow.
+- A área externa não bloqueia cliques no restante da página.
+
+
+CORREÇÃO DO CONTROLE DE ÁUDIO
+- O script JavaScript agora é carregado depois do botão e do elemento de áudio.
+- Isso evita que o JavaScript tente registrar o clique antes de o botão existir.
+- O botão tenta iniciar a faixa ao clicar se o autoplay tiver sido bloqueado.
+- O navegador ainda pode bloquear autoplay com som até a primeira interação do visitante.
+
+
+LOCALIZAÇÕES
+- Foi adicionado um botão "Ver localização" abaixo dos dados da igreja.
+- Foi adicionado outro botão "Ver localização" abaixo das informações do almoço/recepção.
+- Os dois abrem os links do Google Maps fornecidos, em uma nova aba.
